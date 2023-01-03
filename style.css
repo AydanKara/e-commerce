@@ -110,7 +110,11 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-
+.header-mobil {
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}
 .header-center .navigation .menu-list {
   display: flex;
   column-gap: 30px;
@@ -406,5 +410,28 @@ header .menu-dropdown-content a:hover {
 @media (max-width: 768px) {
   .container {
     max-width: 576px;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    max-width: 400px;
+  }
+}
+@media (max-width: 420px) {
+  .container {
+    max-width: 350px;
+  }
+}
+
+
+/* header responsive */
+@media (max-width: 650px) {
+  .header-center {
+    position: fixed;
+    top: 0;
+    
+  }
+  .header-mobil {
+    display: inline-block;
   }
 }
