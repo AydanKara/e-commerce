@@ -40,3 +40,24 @@
   flex-wrap: wrap;
 }
 /*! campaign end */
+
+/*! blog start */
+.blogs {
+  margin-bottom: 30px;
+}
+
+.blogs .blog-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+/*! blog end */
+
+/*! responsive */
+
+@media (max-width: 768px) {
+  .blogs .blog-list {
+    flex-wrap: wrap;
+  }
+}
