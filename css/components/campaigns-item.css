@@ -18,7 +18,7 @@
 
 .campaigns-wrapper:nth-child(1) 
 .campaign-item:nth-child(1) {
-    background-image: url(../../img/campaigns/banner1.png);
+    background-image: url(/e-commerce/img/campaigns/banner1.png);
 }
 .campaigns-wrapper:nth-child(1) 
 .campaign-item:nth-child(2) {
