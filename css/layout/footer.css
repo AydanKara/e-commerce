@@ -58,3 +58,12 @@
     align-items: center;
     column-gap: 15px;
 }
+
+/*! responsive */
+
+@media (max-width: 768px) {
+    .footer .footer-row-wrapper {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+}
