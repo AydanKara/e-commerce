@@ -6,6 +6,7 @@
 .footer .footer-row-wrapper {
     display: flex;
     justify-content: space-between;
+    column-gap: 200px;
 }
 .footer .footer-subscribe .subscribe-title {
     font-size: 30px;
@@ -30,7 +31,12 @@
 .footer .footer-subscribe-bottom form > input {
     flex: 1;
     height: 48px;
+    border: none;
 }
 .footer .footer-subscribe-bottom form > button {
-    flex: 1;
+    height: 48px;
+    border-color: #fff;
+    background-color: #000;
+    color: #fff;
+
 }
