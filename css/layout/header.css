@@ -43,6 +43,7 @@ header {
   align-items: center;
   position: relative;
   height: 90px;
+  z-index: 2;
 }
 .header-center .menu-list .menu-link {
   font-size: 14px;
@@ -151,6 +152,7 @@ header .menu-dropdown-content a:hover {
 }
 .megamenu-wrapper {
   position: static !important;
+  z-index: 2;
 }
 .megamenu-wrapper .megamenu-links {
   display: flex;
