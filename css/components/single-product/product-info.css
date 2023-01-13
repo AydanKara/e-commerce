@@ -106,6 +106,8 @@
     border: 1px solid #dee0ea;
     font-size: 14px;
     cursor: pointer;
+    flex: 1;
+    text-align: center;
     transition: .2s ease all;
 }
 .site-main .values .values-list span:hover {
@@ -117,6 +119,10 @@
     color: #fff;
 }
 .site-main .cart-button {
+    display: flex;
+    column-gap: 10px;
+}
+.site-main .cart-button input {
     width: 80px;
 }
 .site-main .cart-button button {
@@ -135,4 +141,14 @@
 .site-main .divider {
     padding-bottom: 20px;
     border-bottom: 1px solid #dee0ea;
+}
+.site-main .product-meta {
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+    margin-top: 20px;
+    font-size: 13px;
+}
+.site-main .product-meta span {
+    color: #ccc;
 }
