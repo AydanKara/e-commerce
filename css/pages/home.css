@@ -5,6 +5,8 @@
 .section-title h2 {
   font-size: 32px;
   font-weight: 600;
+  line-height: 0.8;
+  margin-bottom: 4px;
 }
 
 /*! categories start */
@@ -47,9 +49,8 @@
 }
 
 .blogs .blog-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 30px;
 }
 /*! blog end */
@@ -116,7 +117,7 @@
 
 @media (max-width: 768px) {
   .blogs .blog-list {
-    flex-wrap: wrap;
+    grid-template-columns: 1fr;
   }
 
   .policy .container .policy-list {
