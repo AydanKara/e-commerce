@@ -39,6 +39,7 @@
 }
 .site-main .colors .colors-wrapper {
     display: flex;
+    column-gap: 5px;
 }
 .site-main .colors .colors-label {
     font-weight: 500;
