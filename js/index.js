@@ -10,7 +10,6 @@ btnOpenSidebar.addEventListener("click", function () {
 closeSidebar.addEventListener("click", function () {
     sidebar.style.left = "-100%"
 })
-//! home sidebar end 
 
 /* click outside start */
 document.addEventListener("click", function (event) {
@@ -19,3 +18,6 @@ document.addEventListener("click", function (event) {
         { sidebar.style.left = "-100%" }
 });
 /* click outside end */
+
+//! home sidebar end 
+
