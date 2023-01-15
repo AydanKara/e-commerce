@@ -19,7 +19,6 @@
 @import url(components/single-product/product-tabs.css);
 @import url(components/reviews.css);
 
-
 /*! pages */
 @import url(pages/home.css);
 @import url(pages/contact.css);
@@ -28,6 +27,7 @@
 @import url(pages/single-product.css);
 @import url(pages/blog.css);
 @import url(pages/single-blog.css);
+
 
 
 
