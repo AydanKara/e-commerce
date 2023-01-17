@@ -92,4 +92,4 @@ function productsFunc() {
   addToCart();
 }
 
-export default productsFunc();
+export default productsFunc;
