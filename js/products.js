@@ -1,38 +1,37 @@
 import { product1 } from "./glide.js";
 
-let products = [];
-let cart = [];
+let products = localStorage.getItem("products")
+  ? JSON.parse(localStorage.getItem("products"))
+  : [];
 
-cart = localStorage.getItem("cart")
+let cart = localStorage.getItem("cart")
   ? JSON.parse(localStorage.getItem("cart"))
   : [];
+
 function addToCart() {
   const cartItems = document.querySelector(".header-cart-count");
   const buttons = [...document.getElementsByClassName("add-to-cart")];
   buttons.forEach((button) => {
     const inCart = cart.find((item) => item.id === Number(button.dataset.id));
     if (inCart) {
+      button.setAttribute("disabled", "disabled");
+    } else {
+      button.addEventListener("click", function (e) {
+        e.preventDefault();
+        const id = e.target.dataset.id;
+        const findProduct = products.find(
+          (product) => product.id === Number(id)
+        );
+        cart.push({ ...findProduct, quantity: 1 });
+        localStorage.setItem("cart", JSON.stringify(cart));
         button.setAttribute("disabled", "disabled");
-      } else {
-        button.addEventListener("click", function (e) {
-          e.preventDefault();
-          const id = e.target.dataset.id;
-          const findProduct = products.find(
-            (product) => product.id === Number(id)
-          );
-          cart.push({ ...findProduct, quantity: 1 });
-          localStorage.setItem("cart", JSON.stringify(cart));
-          button.setAttribute("disabled", "disabled");
-          cartItems.innerHTML = cart.length;
-        });
-      }
+        cartItems.innerHTML = cart.length;
+      });
+    }
   });
 }
 
 function productsFunc() {
-  products = localStorage.getItem("products")
-    ? JSON.parse(localStorage.getItem("products"))
-    : [];
   const productsContainer = document.getElementById("product-list");
 
   let results = "";
@@ -86,7 +85,7 @@ function productsFunc() {
       </div>
     </li>
     `;
-    productsContainer.innerHTML = results;
+    productsContainer ? (productsContainer.innerHTML = results) : "";
   });
   product1();
   addToCart();
