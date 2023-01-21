@@ -10,7 +10,7 @@
 }
 
 body {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 ul,
@@ -43,6 +43,10 @@ p {
 button {
   cursor: pointer;
   border: none;
+}
+button:disabled {
+  opacity: 0.4 !important;
+  cursor: no-drop;
 }
 .btn {
   display: inline-block;
@@ -91,35 +95,34 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .img-fluid {
-    width: 100%;
+  width: 100%;
 }
 /*! base end */
-
 
 /*! responsive */
 
 @media (max-width: 1200px) {
-    .container {
-      max-width: 992px;
-    }
+  .container {
+    max-width: 992px;
   }
-  @media (max-width: 992px) {
-    .container {
-      max-width: 768px;
-    }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 768px;
   }
-  @media (max-width: 768px) {
-    .container {
-      max-width: 576px;
-    }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 576px;
   }
-  @media (max-width: 576px) {
-    .container {
-      max-width: 400px;
-    }
+}
+@media (max-width: 576px) {
+  .container {
+    max-width: 400px;
   }
-  @media (max-width: 420px) {
-    .container {
-      max-width: 350px;
-    }
+}
+@media (max-width: 420px) {
+  .container {
+    max-width: 350px;
   }
+}
