@@ -18,12 +18,13 @@ header {
   height: 90px;
   display: flex;
   align-items: center;
+  
 }
-
 .header-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 .header-mobile {
   font-size: 24px;
