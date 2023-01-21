@@ -1,4 +1,5 @@
 const productsContainer = document.getElementById("product-list");
+const productsGallery = document.getElementById("gallery-thumbs");
 
 export function product1() {
     const config = {
@@ -41,23 +42,22 @@ export function product1() {
     },
   };
   
-  productsContainer && new Glide(".product-carousel2", config2).mount();
+productsContainer && new Glide(".product-carousel2", config2).mount();
 
-  const config3 = {
-    perView: 5,
-    gap: 20,
   
-    breakpoints: {
-      992: {
-        perView: 3,
-      },
-      768: {
-        perView: 2,
-      },
-      576: {
-        perView: 1,
-      },
+const config3 = {
+  perView: 5,
+  breakpoints: {
+    992: {
+      perView: 3,
     },
-  };
-  
-new Glide(".product-thumb", config3).mount();
+    768: {
+      perView: 2,
+    },
+    576: {
+      perView: 1,
+    },
+  },
+};
+
+productsGallery && new Glide(".product-thumb", config3).mount();

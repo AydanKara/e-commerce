@@ -23,5 +23,5 @@ oldPriceDOM.innerHTML = findProduct.price.oldPrice.toFixed(2);
 /* product gallery */
 
 const singleImageDOM = document.querySelector("#single-image");
-console.log(singleImageDOM)
+
 singleImageDOM.src = findProduct.img.singleImage;
