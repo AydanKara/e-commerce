@@ -69,6 +69,9 @@
     color: #dee0ea;
     transition: .2s ease all; 
 }
+.tab-panel-reviews .comment-form-rating .star.active i {
+    color: gold;
+  }
 .tab-panel-reviews .comment-form-rating .stars a:hover i {
     color: gold;
 }
@@ -93,7 +96,6 @@
     column-gap: 4px;
     font-size: 14px;
 }
-
 .comment-form input.submit {
     background-color: #000;
     color: #fff;
