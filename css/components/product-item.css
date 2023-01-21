@@ -142,8 +142,17 @@
   .product-wrapper .glide__arrow--left {
     left: 0px;
   }
-
   .product-wrapper .glide__arrow--right {
     right: 0px;
+  }
+  .product-item .product-links {
+    display: inline-flex;
+    flex-direction: column;
+    row-gap: 8px;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    opacity: 1;
+    visibility: visible;
   }
 }
