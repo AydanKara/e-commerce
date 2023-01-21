@@ -1,10 +1,25 @@
+function productRoute() {
+    const resultItemDOM = document.querySelectorAll(
+      ".search-results .result-item"
+    );
+    resultItemDOM.forEach((item) => {
+      item.addEventListener("click", (e) => {
+        const id = item.dataset.id;
+        if (id) {
+          localStorage.setItem("productId", JSON.stringify(id));
+          window.location.href = "single-product.html";
+        }
+      });
+    });
+  }
+
 function searchFunc(data) {
   console.log(data);
   const searchWrapperDOM = document.querySelector(".search-results .results");
   let result = "";
   data.forEach((item) => {
     result += `
-        <a href="#" class="result-item">
+        <a href="#" class="result-item" data-id=${item.id}>
             <img src="${item.img.singleImage}" class="search-thump" alt=""/>
             <div class="search-info">
                 <h4>${item.name}</h4>
@@ -15,6 +30,7 @@ function searchFunc(data) {
       `;
   });
   searchWrapperDOM.innerHTML = result;
+  productRoute();
 }
 
 export default searchFunc;
