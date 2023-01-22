@@ -21,19 +21,16 @@
         <div class="container">
           <div class="header-wrapper">
             <div class="header-mobile">
-              <i class="bi bi-list"></i>
+              <i class="bi bi-list" id="btn-menu"></i>
             </div>
             <div class="header-left">
               <a href="./index.html" class="logo">LOGO</a>
             </div>
-            <div class="header-center">
+            <div class="header-center" id="sidebar">
               <nav class="navigation">
                 <ul class="menu-list">
                   <li class="menu-list-item">
-                    <a href="./index.html" class="menu-link"
-                      >Home
-                      <i class="bi bi-chevron-down"></i>
-                    </a>
+                    <a href="./index.html" class="menu-link active">Home<i class="bi bi-chevron-down"></i></a>
                     <div class="menu-dropdown-wrapper">
                       <ul class="menu-dropdown-content">
                         <li><a href="#">Home Clean</a></li>
@@ -47,7 +44,7 @@
                     </div>
                   </li>
                   <li class="menu-list-item megamenu-wrapper">
-                    <a href="#" class="menu-link"
+                    <a href="shop.html" class="menu-link"
                       >Shop <i class="bi bi-chevron-down"></i
                     ></a>
                     <div class="menu-dropdown-wrapper">
@@ -100,7 +97,7 @@
                           <h4 class="megamenu-single-subtitle">
                             Suspendisse faucibus nunc et pellentesque
                           </h4>
-                          <a href="shop.html" class="megamenu-single-button btn btn-sm"
+                          <a href="#" class="megamenu-single-button btn btn-sm"
                             >Shop Now</a
                           >
                         </div>
@@ -108,21 +105,25 @@
                     </div>
                   </li>
                   <li class="menu-list-item">
-                    <a href="blog.html" class="menu-link">Blog</a>
+                    <a href="blog.html" class="menu-link"
+                      >Blog</i
+                    ></a>
                   </li>
                   <li class="menu-list-item">
-                    <a href="./contact.html" class="menu-link active">Contact</a>
+                    <a href="./contact.html" class="menu-link"
+                      >Contact</i
+                    ></a>
                   </li>
                 </ul>
               </nav>
-              <i class="bi-x-circle"></i>
+              <i class="bi-x-circle" id="close-sidebar"></i>
             </div>
             <div class="header-right">
               <div class="header-right-links">
                 <a href="account.html" class="header-account">
                   <i class="bi bi-person"></i>
                 </a>
-                <button class="toggle-button">
+                <button class="search-button">
                   <i class="bi bi-search"></i>
                 </button>
                 <a href="#">
@@ -186,8 +187,8 @@
             </a>
           </div>
         </div>
-        <i class="bi bi-x-circle"></i>
-      </div>
+        <i class="bi bi-x-circle" id="close-search"></i>
+</div>
     </div>
     <!--! modal search end  -->
 
@@ -455,5 +456,8 @@
       </div>
     </footer>
     <!--! footer end  -->
+    
+    <!-- javascript  -->
+    <script src="js/main.js" type="module"></script>
   </body>
 </html>
