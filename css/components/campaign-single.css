@@ -37,3 +37,11 @@
     border-color: #1367ef;
     color: #fff;
 }
+@media (max-width: 400px) {
+    .campaign-single {
+        padding: 140px 50px;
+    }
+    .campaign-single .campaign-wrapper strong {
+        font-size: 40px;
+    }
+}
