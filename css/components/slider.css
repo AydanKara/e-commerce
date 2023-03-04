@@ -111,4 +111,9 @@
     .slider-buttons {
         display: none !important;
     }
+    .slider-item .slider-img img {
+        object-fit: cover;
+        
+        
+    }
 }
